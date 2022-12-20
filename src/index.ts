@@ -1,7 +1,7 @@
-const firstName: string = "Valdeni";
+const firstName = 'Valdeni'
 
 function greetings(msg: string) {
-  return `Hello World ${msg}!`;
+  return `Hello World ${msg}!`
 }
 
-console.log(greetings(firstName));
+console.log(greetings(firstName))

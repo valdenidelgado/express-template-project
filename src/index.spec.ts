@@ -1,3 +1,5 @@
+import Person from './index'
 it('should sum', () => {
-  expect(1 + 2).toBe(3)
+  const person = new Person()
+  expect(person.sayMyName()).toBe('Valdeni')
 })

@@ -1,5 +1,7 @@
-const firstName = 'Valdeni'
-
-function greetings(msg: string) {
-  return `Hello World ${msg}!`
+class Person {
+  sayMyName() {
+    return 'Valdeni'
+  }
 }
+
+export default Person

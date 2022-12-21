@@ -1,7 +1,14 @@
-class Person {
-  sayMyName() {
-    return 'Valdeni'
-  }
-}
+import * as express from 'express'
+import { Request, Response } from 'express'
 
-export default Person
+const app = express()
+
+const port = process.env.PORT || 3000
+
+app.get('/', (req: Request, res: Response) => {
+  res.send('Hello World!')
+})
+
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`)
+})
